@@ -1,0 +1,78 @@
+* {
+  color: white;
+  font-family: cursive;
+}
+body {
+  background-color: whitesmoke;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -20%);
+  background: linear-gradient(90deg, rgb(0, 182, 241), rgb(48, 161, 247));
+  width: 350px;
+  height: 450px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 16px rgb(0, 182, 241);
+}
+
+.location {
+  background-color: #00ff4e;
+  text-align: center;
+  box-shadow: 0 0 4px #00ff4e;
+}
+.location h2 {
+  padding: 5px;
+}
+.temp {
+  display: block;
+  background-color: #00ff4e;
+  margin-right: 100px;
+  margin-left: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px #00ff4e;
+}
+.temp p {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.add-button {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: rgb(0, 182, 241);
+  border: none;
+  padding: 10px 40px 10px 40px;
+  font-size: 15px;
+}
+
+.add-container {
+  position: absolute;
+  background-color: rgb(0, 182, 241);
+  top: 80px;
+  right: 0px;
+  padding: 10px;
+}
+
+.update-button {
+  color: rgb(0, 182, 241);
+  background-color: white;
+  border: none;
+  font-size: 14px;
+}
+.update-button:hover {
+  background-color: whitesmoke;
+}
+
+.city-name {
+  font-size: 14px;
+  color: rgb(0, 182, 241);
+  padding-left: 5px;
+}
+
+.error-div {
+  background-color: red;
+}

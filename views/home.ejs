@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Site</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="location">
+        <h2><%= weather.city %></h2>
+      </div>
+      <p><%= weather.date %></p>
+      <img
+        src="http://openweathermap.org/img/wn/<%=weather.icon%>@2x.png"
+        alt=""
+      />
+      <div class="temp">
+        <p><%= weather.temp %> °C</p>
+      </div>
+
+      <p><%= weather.main %></p>
+      <p><%= weather.description %></p>
+    </div>
+
+    <button class="add-button">update city</button>
+    <div class="add-container">
+      <form action="/" method="POST">
+        <input
+          class="city-name"
+          type="text"
+          name="cityName"
+          id=""
+          placeholder="city name"
+          autocomplete="off"
+        />
+        <button class="update-button" type="submit">update</button>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $('.add-container').hide()
+
+      $('.add-button').click(() => {
+        $('.add-container').slideToggle()
+      })
+    </script>
+  </body>
+</html>
